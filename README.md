@@ -5,7 +5,7 @@ Also a great way to test if your current JVM platform is supported.
 
 Simply clone this repository and run `mvn package` to build. If you don't have maven installed, you can use the included maven wrapper and run `mvnw package` (or `mvnw.cmd package` on Windows).
 
-Once you've run the build:\
+After you've run the build:
 
 execute the "Main" class via your favourite IDE
 
