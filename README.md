@@ -3,7 +3,9 @@ Example showing how to use jvm-brotli (https://github.com/nixxcode/jvm-brotli)
 
 Also a great way to test if your current JVM platform is supported.
 
-Simply clone this repository and run `mvn package` to build, then: 
+Simply clone this repository and run `mvn package` to build. If you don't have maven installed, you can use the included maven wrapper and run `mvnw package` (or `mvnw.cmd package` on Windows).
+
+Once you've run the build: 
 - execute the "Main" class via your favourite IDE, or 
 - navigate to "target" dir and run `java -jar jvmb-example.jar`
 
