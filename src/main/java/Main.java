@@ -4,7 +4,6 @@ import com.nixxcode.jvmbrotli.enc.BrotliOutputStream;
 import com.nixxcode.jvmbrotli.enc.Encoder;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
@@ -14,25 +13,10 @@ public class Main {
     private final static String encodedPath = "src/encoded.br";
     private final static String decodedPath = "src/decoded.txt";
 
-    private final static String altSourceFilePath = "../src/main/java/Main.java";
-    private final static String altEncodedPath = "../src/encoded.br";
-    private final static String altDecodedPath = "../src/decoded.txt";
-
-    // We have to try two different paths, depending if we're executing from IDE or command line
     public static void main(String[] args) throws Exception {
         BrotliLoader.loadBrotli();
-
-        try { // Executing with project dir as base (probably executing from IDE)
-            encode(sourceFilePath, encodedPath);
-            decode(encodedPath, decodedPath);
-        } catch (FileNotFoundException e) {
-            try { // Executing with target dir as base, so we need to go up one level
-                encode(altSourceFilePath, altEncodedPath);
-                decode(altEncodedPath, altDecodedPath);
-            } catch (FileNotFoundException e2) { // This shouldn't happen unless the src folder was deleted
-                e2.printStackTrace();
-            }
-        }
+        encode(sourceFilePath, encodedPath);
+        decode(encodedPath, decodedPath);
     }
 
     private static void encode(String in, String out) throws IOException {

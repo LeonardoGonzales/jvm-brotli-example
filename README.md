@@ -7,11 +7,11 @@ Simply clone this repository and run `mvn package` to build. If you don't have m
 
 After you've run the build:
 
-execute the "Main" class via your favourite IDE
+Execute the "Main" class via your favourite IDE.
 
 **OR** 
 
-navigate to "target" dir and run `java -jar jvmb-example.jar`
+Run `java -jar target/jvmb-example.jar` from the **project root**. (Do not go into target dir and run from there, it won't work due to hardcoded paths)
 
 If the execution is successful, two new files should appear in the src folder: **encoded.br** and **decoded.txt**
 
