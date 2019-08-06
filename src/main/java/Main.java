@@ -2,7 +2,6 @@ import com.nixxcode.jvmbrotli.common.BrotliLoader;
 import com.nixxcode.jvmbrotli.dec.BrotliInputStream;
 import com.nixxcode.jvmbrotli.enc.BrotliOutputStream;
 import com.nixxcode.jvmbrotli.enc.Encoder;
-import sun.misc.Resource;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
