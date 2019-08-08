@@ -14,7 +14,7 @@ public class Main {
     private final static String decodedPath = "src/decoded.txt";
 
     public static void main(String[] args) throws Exception {
-        BrotliLoader.loadBrotli();
+        BrotliLoader.isBrotliAvailable();
         encode(sourceFilePath, encodedPath);
         decode(encodedPath, decodedPath);
     }
