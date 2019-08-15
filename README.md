@@ -1,4 +1,3 @@
-# jvm-brotli-example
 Example showing how to use jvm-brotli (https://github.com/nixxcode/jvm-brotli)
 
 Also a great way to test if your current JVM platform is supported.
